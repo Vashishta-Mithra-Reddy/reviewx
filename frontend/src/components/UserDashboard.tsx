@@ -85,8 +85,8 @@ const UserDashboard = () => {
     
     setPasswordLoading(true);
     try {
-      await axios.put(`${import.meta.env.VITE_BACKEND_URL}/users/password`, {
-        currentPassword,
+      await axios.put(`${import.meta.env.VITE_BACKEND_URL}/users/me/password`, {
+        oldPassword: currentPassword,
         newPassword
       }, {
         withCredentials: true,

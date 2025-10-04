@@ -1,10 +1,12 @@
 import express from 'express';
-import { createUser, getAllUsers, getUserById, updateUser, deleteUser, getStoreOwners } from '../controllers/userController.js';
+import { createUser, getAllUsers, getUserById, updateUser, deleteUser, getStoreOwners, updateMyPassword } from '../controllers/userController.js';
 import { verifyToken } from '../middleware/auth.js';
 import { checkRole } from '../middleware/roleCheck.js';
 
 const router = express.Router();
 
+
+router.put('/me/password', verifyToken, updateMyPassword);
 router.post('/', verifyToken, checkRole(['admin']), createUser);
 router.get('/', verifyToken, checkRole(['admin']), getAllUsers);
 router.get('/store-owners', verifyToken, checkRole(['admin']), getStoreOwners);
