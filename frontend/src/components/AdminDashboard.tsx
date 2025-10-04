@@ -79,7 +79,7 @@ const AdminDashboard = () => {
             <p className="text-4xl font-bold text-primary mt-2">{stats.totalRatings}</p>
           </div>
         </div>
-        <RatingIllustration height={393.65484} width={575.03315} className='pt-10 p-12' />
+        <RatingIllustration height={393.65484} width={575.03315} className='pt-10 p-12 md:scale-100 scale-50' />
         </div>
       )}
 

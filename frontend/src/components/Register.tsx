@@ -90,7 +90,7 @@ const Register: React.FC = () => {
             <input
               type="text"
               id="address"
-              placeholder="123 Main St"
+              placeholder="Somewhere on the Earth."
               className="w-full px-4 py-2 text-lg bg-card border-2 border-foreground/20 focus:border-foreground/50 rounded-xl transition-all placeholder:text-muted-foreground duration-500 focus:outline-none"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
