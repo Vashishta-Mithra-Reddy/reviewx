@@ -1,4 +1,4 @@
-"# ReviewX
+# ReviewX
 
 A comprehensive full-stack rating and review management system that enables users to rate stores, store owners to manage their establishments, and administrators to oversee the entire platform.
 
@@ -289,22 +289,15 @@ reviewx/
 
 ## 🧪 Development
 
-### Linting (Frontend)
+### Dev (Frontend)
 ```bash
 cd frontend
-npm run lint
+npm run dev
 ```
-
-### Build (Frontend)
+### Dev (Backend)
 ```bash
-cd frontend
-npm run build
-```
-
-### Preview Production Build
-```bash
-cd frontend
-npm run preview
+cd backend
+npm run dev
 ```
 
 ## 🤝 Contributing
@@ -325,13 +318,5 @@ This project is licensed under the ISC License.
 
 **Vashishta Mithra Reddy**
 
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Express.js community
-- Tailwind CSS for the utility-first approach
-- All open-source contributors
-
 ---
 
-**Note**: This is a learning project demonstrating full-stack development with modern technologies and best practices." 
