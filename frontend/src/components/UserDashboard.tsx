@@ -238,8 +238,8 @@ const UserDashboard = () => {
                   <tr key={store.id}>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-foreground">{store.name}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-foreground">{store.address}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-foreground"><div className="flex items-center">{store.averageRating || 'N/A'} <StarRating rating={Number(store.averageRating) || 0} /></div></td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-foreground"><div className="flex items-center">{userRating || 'Not rated'} <StarRating rating={userRating || 0} /></div></td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-foreground"><div className="flex items-center">{store.averageRating || 'N/A'}{store.averageRating && <StarRating rating={Number(store.averageRating) || 0} />}</div></td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-foreground"><div className="flex items-center">{userRating || 'Not rated'} {userRating && <StarRating rating={userRating || 0} /> }</div></td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-foreground">
                       <button
                         onClick={() => {
